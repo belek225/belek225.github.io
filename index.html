@@ -3,58 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test table</title>
-<!--     Faisal Sidauruk(17220312) -->
+    <title>Faisal Sidauruk(17220312)</title>
 </head>
 <body>
+    <div style="text-align: center;">
+
     <div>
-        <h1><strong>Nama:</strong>Faisal sidauruk</h1>
-<!--         <h1><strong>Nama: Faisal Sidauruk <br>NIM: 17220312 <br>KELAS: 17.3A.25</strong></h1> -->
+        <h1><strong>Nama: Faisal Sidauruk <br>NIM: 17220312 <br>KELAS: 17.3A.25</strong></h1>
     </div>
     <div>
+        <center>
         <table border="2"  >
             <tr>
-                <td colspan="6" bgcolor="ffcc99" height="10"><center><strong>Daftar Produk</strong></center></td>
+                <td colspan="6" bgcolor="26a69a" height="10"><center><strong>Daftar Produk</strong></center></td>
             </tr>
             <tr>
-                <td rowspan="3" bgcolor="ffff99"><center><img width="200" src="https://i0.wp.com/blog.photojournalist-tgh.tv/wp-content/uploads/2015/10/EOS-M10_Black_09.jpg?resize=920%2C425&ssl=1" alt="" width="50"></center></td>
-                <td bgcolor="00ff66" style="width: 65px;" >nama<br>produk</td>
-                <td bgcolor="ff66ff" style="width: 300px;" colspan="4">Canon Eos M10 kit EF-m15-45mm</td>
+                <td rowspan="3" bgcolor="202833"><center><img width="200" src="https://www.swingwatch.co.id/wp-content/uploads/2023/03/ORIENT-RA-AA0002L-2.jpg" alt="" width="50"></center></td>
+                <td bgcolor="66fcf1" style="width: 65px;" >Product<br>Name</td>
+                <td bgcolor="c5c6c8" style="width: 300px;" colspan="4"><strong>ORIENT Kamasu Mako III</strong></td>
             </tr>
             <tr>
-                <td bgcolor="00ff66">Harga</td>
-                <td bgcolor="ff66ff" colspan="4">Rp 4,899,000</td>
+                <td  bgcolor="66fcf1">Price</td>
+                <td bgcolor="c5c6c8" colspan="4">Rp 4,095,000</td>
             </tr>
             <tr>
-                <td bgcolor="00ff66">Fitur <br>produk</td>
-                <td bgcolor="ff66ff" colspan="4">
+                <td bgcolor="66fcf1">Product<br>Details</td>
+                <td bgcolor="c5c6c8" colspan="4">
                     <ul>
-                        <li>Kamera Mirorles</li>
-                        <li>Efektifitas Piksel 18 mp</li>
-                        <li>Tipe Sensor : Cmos DIGIC 6</li>
-                        <li>layar : 3.0 inch</li>
-                        <li>Memiliki lampu flasg dengan jarak jangkauan hingga 5 meter</li>
+                        <li>Automatic Mechanical Movement Caliber F6922</li>
+                        <li>Sapphire Crystal Glass</li>
+                        <li>22 jewels</li>
+                        <li>200 m Water Resistance Suitable for Air Diving</li>
+                        <li>Diameter 41.8 mm x Thickness 13 mm</li>
+                        <li>Lug to lug 46.8 mm</li>
+                        <li>172 g</li>
                     </ul>
                 </td>
             </tr>
         </table>
+        </center>
     </div>
     <div>
         <audio controls>
-        <source src="NewJeans - OMG.mp3">
+        <source src="https://od.lk/s/OTZfODU5NjQ4MDNf/Andy%20Mineo%20-%20Coming%20In%20Hot.mp3">
                 Browser kamu tidak mendukung tag audio ini.
         </audio>
         <p>
-            NewJeans - OMG
+            Andy Mineo - Coming In Hot<br>
+            <button id="andyMineo">Download this song </button>
+        </p>
+        <!-- <audio controls>
+        <source src="https://od.lk/s/OTZfODU4OTQ1NDRf/Sal%20Priadi%20-%20Mesra-mesraannya%20kecil-kecilan%20dulu.mp3">
+                Browser kamu tidak mendukung tag audio ini.
+        </audio>
+        <p>
+            Sal Priadi - Mesra-mesraannya kecil-kecilan dulu<br>
+            <button id="salPriadi">Download this song </button>
         </p>
         <audio controls>
-        <source src="Sal Priadi - Mesra-mesraannya kecil-kecilan dulu.mp3">
-                Browser kamu tidak mendukung tag audio ini.
+            <source src="https://od.lk/s/OTZfODU4OTQ1MjRf/NewJeans%20-%20OMG.mp3">
+            Browser kamu tidak mendukung tag audio ini.
         </audio>
         <p>
-            Sal Priadi - Mesra-mesraannya kecil-kecilan dulu
-        </p>
+            NewJeans - OMG <br> <button id="newJeans">Download this song</button>
+        </p> -->
+    </div>
+    <style>
+    </style>
+    <script>
+        function downloadLagu(m,l) {
+            window.location.href= m
+            console.log(`lagu di download ${l}`)
+        }
+        const buttonc = document.getElementById('andyMineo');
+        buttonc.addEventListener('click', async function() {
+            await ('https://od.lk/d/OTZfODU5NjQ4MDNf/Andy%20Mineo%20-%20Coming%20In%20Hot.mp3','Andy Mineo')
+        })
+
+        const butonS = document.getElementById('salPriadi');
+        butonS.addEventListener('click', function() {
+            downloadLagu('https://od.lk/s/OTZfODU4OTQ1NDRf/Sal%20Priadi%20-%20Mesra-mesraannya%20kecil-kecilan%20dulu.mp3', 'Sal Priadi')
+        });
+        const buttoN = document.getElementById('newJeans');
+        buttoN.addEventListener('click', function() {
+            downloadLagu('https://od.lk/d/OTZfODU4OTQ1MjRf/NewJeans%20-%20OMG.mp3','New Jeans')
+        });
+
+    </script>
     </div>
 </body>
-
 </html>
